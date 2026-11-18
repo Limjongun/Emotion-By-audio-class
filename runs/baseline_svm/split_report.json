@@ -1,0 +1,85 @@
+{
+  "mode": "stratified",
+  "is_valid": true,
+  "errors": [],
+  "warnings": [],
+  "splits": {
+    "train": {
+      "n_files": 24500,
+      "n_speakers": 14,
+      "speakers": [
+        "0003",
+        "0004",
+        "0005",
+        "0006",
+        "0007",
+        "0008",
+        "0010",
+        "0011",
+        "0013",
+        "0014",
+        "0015",
+        "0017",
+        "0018",
+        "0020"
+      ],
+      "total_duration_hours": 19.957,
+      "avg_duration_sec": 2.93,
+      "languages": {
+        "zh": 12250,
+        "en": 12250
+      },
+      "emotions": {
+        "angry": 4900,
+        "happy": 4900,
+        "neutral": 4900,
+        "sad": 4900,
+        "surprise": 4900
+      }
+    },
+    "val": {
+      "n_files": 3500,
+      "n_speakers": 2,
+      "speakers": [
+        "0009",
+        "0016"
+      ],
+      "total_duration_hours": 2.581,
+      "avg_duration_sec": 2.65,
+      "languages": {
+        "zh": 1750,
+        "en": 1750
+      },
+      "emotions": {
+        "angry": 700,
+        "happy": 700,
+        "neutral": 700,
+        "sad": 700,
+        "surprise": 700
+      }
+    },
+    "test": {
+      "n_files": 7000,
+      "n_speakers": 4,
+      "speakers": [
+        "0001",
+        "0002",
+        "0012",
+        "0019"
+      ],
+      "total_duration_hours": 6.534,
+      "avg_duration_sec": 3.36,
+      "languages": {
+        "zh": 3500,
+        "en": 3500
+      },
+      "emotions": {
+        "angry": 1400,
+        "happy": 1400,
+        "neutral": 1400,
+        "sad": 1400,
+        "surprise": 1400
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+============================================================
+SPEECH EMOTION RECOGNITION (SER) EVALUATION REPORT
+============================================================
+Total Samples: 7000
+Primary Metric (UAR / Balanced Accuracy): 70.40%
+Weighted Accuracy (WAR):                   70.40%
+Macro F1-Score:                            70.41%
+Matthews Correlation Coeff (MCC):          0.6388
+Cohen's Kappa:                             0.6300
+Expected Calibration Error (ECE):          0.1506
+Log Loss (Cross-Entropy):                  0.9184
+Top-2 Accuracy:                            94.63%
+------------------------------------------------------------
+Subject-Level 95% Bootstrap Confidence Intervals (Speaker Resampled):
+  UAR       : 70.29% ± 4.79%  [95% CI: 60.66% - 78.37%]
+  ACCURACY  : 70.29% ± 4.79%  [95% CI: 60.66% - 78.37%]
+  MACRO_F1  : 69.81% ± 5.44%  [95% CI: 57.92% - 78.29%]
+------------------------------------------------------------
+Class        Precision (%)  Recall (%)   F1 (%)     Support 
+------------------------------------------------------------
+neutral      98.90          57.79        72.95      1400    
+happy        56.17          47.14        51.26      1400    
+angry        89.97          74.36        81.42      1400    
+sad          73.78          91.43        81.66      1400    
+surprise     53.81          81.29        64.75      1400    
+------------------------------------------------------------
+Top Confusion Pairs (Most Frequently Confused):
+  True: happy      -> Pred: surprise   (Count: 681, 48.64%)
+  True: neutral    -> Pred: sad        (Count: 381, 27.21%)
+  True: angry      -> Pred: surprise   (Count: 284, 20.29%)
+  True: surprise   -> Pred: happy      (Count: 199, 14.21%)
+  True: neutral    -> Pred: happy      (Count: 150, 10.71%)
+------------------------------------------------------------
+Breakdown by Language:
+  Lang en: Acc=75.03%, UAR=75.03%, F1=76.12% (N=3500)
+  Lang zh: Acc=65.77%, UAR=65.77%, F1=64.19% (N=3500)
+============================================================

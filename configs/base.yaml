@@ -1,0 +1,34 @@
+seed: 42
+data:
+  root: "D:/datasets/archive/Emotion Speech Dataset"
+  train_csv: data/train.csv
+  val_csv: data/val.csv
+  test_csv: data/test.csv
+  sr: 16000
+  crop_sec: 4.0
+  trim_db: 30
+  classes: [neutral, happy, angry, sad, surprise]
+split:
+  mode: stratified      # fixed | stratified | kfold
+  n_test_per_lang: 2
+  n_val_per_lang: 1
+model:
+  type: cnn             # handcrafted | cnn | wavlm
+  name: microsoft/wavlm-base-plus
+  n_mels: 80
+  dropout: 0.3
+  freeze_encoder: true
+train:
+  epochs: 10
+  batch_size: 16
+  grad_accum: 2
+  lr: 1.0e-3            # For CNN
+  lr_backbone: 2.0e-5   # For WavLM
+  lr_head: 1.0e-3       # For WavLM
+  weight_decay: 1.0e-4
+  label_smoothing: 0.1
+  amp: true
+  patience: 6
+  num_workers: 0
+  use_augmentation: true
+  use_specaugment: true

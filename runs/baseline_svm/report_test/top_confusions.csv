@@ -1,0 +1,11 @@
+true_class,pred_class,count,rate_pct
+happy,surprise,1060,75.71
+angry,surprise,485,34.64
+sad,happy,344,24.57
+neutral,angry,309,22.07
+neutral,happy,247,17.64
+angry,happy,228,16.29
+neutral,sad,201,14.36
+sad,neutral,161,11.5
+surprise,happy,155,11.07
+happy,angry,126,9.0

@@ -1,0 +1,30 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# PyTest
+.pytest_cache/
+
+# Large model binaries and checkpoints (GitHub rejects files > 100MB)
+*.pt
+*.pth
+*.bin
+*.joblib
+*.pkl
+
+# TensorBoard event files
+events.out.tfevents.*
+tensorboard/
+runs/*/tensorboard/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

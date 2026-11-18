@@ -1,0 +1,38 @@
+============================================================
+SPEECH EMOTION RECOGNITION (SER) EVALUATION REPORT
+============================================================
+Total Samples: 7000
+Primary Metric (UAR / Balanced Accuracy): 45.79%
+Weighted Accuracy (WAR):                   45.79%
+Macro F1-Score:                            45.45%
+Matthews Correlation Coeff (MCC):          0.3332
+Cohen's Kappa:                             0.3223
+Expected Calibration Error (ECE):          0.3068
+Log Loss (Cross-Entropy):                  1.7664
+Top-2 Accuracy:                            72.74%
+ROC-AUC (OvR Macro):                       0.7726
+------------------------------------------------------------
+Subject-Level 95% Bootstrap Confidence Intervals (Speaker Resampled):
+  UAR       : 45.83% ± 2.65%  [95% CI: 41.80% - 51.41%]
+  ACCURACY  : 45.83% ± 2.65%  [95% CI: 41.80% - 51.41%]
+  MACRO_F1  : 44.78% ± 2.31%  [95% CI: 40.65% - 49.08%]
+------------------------------------------------------------
+Class        Precision (%)  Recall (%)   F1 (%)     Support 
+------------------------------------------------------------
+neutral      77.58          41.29        53.89      1400    
+happy        17.25          14.50        15.75      1400    
+angry        52.67          45.86        49.03      1400    
+sad          65.83          50.64        57.25      1400    
+surprise     38.57          76.64        51.32      1400    
+------------------------------------------------------------
+Top Confusion Pairs (Most Frequently Confused):
+  True: happy      -> Pred: surprise   (Count: 1060, 75.71%)
+  True: angry      -> Pred: surprise   (Count: 485, 34.64%)
+  True: sad        -> Pred: happy      (Count: 344, 24.57%)
+  True: neutral    -> Pred: angry      (Count: 309, 22.07%)
+  True: neutral    -> Pred: happy      (Count: 247, 17.64%)
+------------------------------------------------------------
+Breakdown by Language:
+  Lang en: Acc=43.14%, UAR=43.14%, F1=41.20% (N=3500)
+  Lang zh: Acc=48.43%, UAR=48.43%, F1=44.63% (N=3500)
+============================================================

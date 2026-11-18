@@ -1,0 +1,39 @@
+data:
+  classes:
+  - neutral
+  - happy
+  - angry
+  - sad
+  - surprise
+  crop_sec: 4.0
+  root: D:/datasets/archive/Emotion Speech Dataset
+  sr: 16000
+  test_csv: data/test.csv
+  train_csv: data/train.csv
+  trim_db: 30
+  val_csv: data/val.csv
+model:
+  dropout: 0.3
+  freeze_encoder: true
+  n_mels: 80
+  name: microsoft/wavlm-base-plus
+  type: wavlm
+seed: 42
+split:
+  mode: stratified
+  n_test_per_lang: 2
+  n_val_per_lang: 1
+train:
+  amp: true
+  batch_size: 8
+  epochs: 8
+  grad_accum: 2
+  label_smoothing: 0.1
+  lr: 0.001
+  lr_backbone: 2.0e-05
+  lr_head: 0.001
+  num_workers: 0
+  patience: 6
+  use_augmentation: true
+  use_specaugment: true
+  weight_decay: 0.0001
