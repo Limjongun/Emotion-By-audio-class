@@ -52,13 +52,11 @@ Tabel di bawah memperlihatkan bagaimana evolusi model dari Baseline $\rightarrow
 
 ## 3. Matriks Konfusi & Solusi Konfusi Akustik
 
-````carousel
-![Confusion Matrix WavLM](/C:/Users/ALIM/.gemini/antigravity/brain/a5df193c-a9a9-4917-a54d-9c05b6738f5f/cm_wavlm.png)
-<!-- slide -->
-![Confusion Matrix CNN](/C:/Users/ALIM/.gemini/antigravity/brain/a5df193c-a9a9-4917-a54d-9c05b6738f5f/cm_cnn.png)
-<!-- slide -->
-![Confusion Matrix SVM](/C:/Users/ALIM/.gemini/antigravity/brain/a5df193c-a9a9-4917-a54d-9c05b6738f5f/cm_svm.png)
-````
+### Visualisasi Matriks Konfusi (Normalized)
+
+| Jalur C: Pretrained WavLM (UAR: 70.40%) 🏆 | Jalur B: Log-Mel CNN (UAR: 64.44%) | Jalur A: SVM Baseline (UAR: 45.79%) |
+|:---:|:---:|:---:|
+| ![Confusion Matrix WavLM](../runs/wavlm_exp1/report_test/confusion_matrix.png) | ![Confusion Matrix CNN](../runs/cnn_exp1/report_test/confusion_matrix.png) | ![Confusion Matrix SVM](../runs/baseline_svm/report_test/confusion_matrix.png) |
 
 ### Analisis Penurunan Konfusi Happy $\rightarrow$ Surprise:
 - Pada **CNN (Jalur B)**: Terjadi konfusi masif sebanyak **1.077 file (76.93%)** suara Happy tertukar menjadi Surprise.
